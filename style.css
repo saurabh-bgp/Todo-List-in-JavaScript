@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    background: linear-gradient(145deg, rgb(94, 0, 128), rgb(0, 60, 255));
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+.heading{
+    color: white;
+    margin-block-end: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.input-container{
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+}
+.input-container input{
+    border: none;
+    outline: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.input-container input[type="text"]{
+    width: 70%;
+}
+.input-container input[type="button"]{
+    background:green;
+    color: white;
+    font-weight: 700;
+    margin-left: 8px;
+    cursor: pointer;
+    padding: 12px 24px;
+    transition:0.5s ease-in-out;
+}
+.input-container input[type="button"]:hover{
+    background-color: rgb(172, 47, 255);
+}
+ul{
+    width: 100%;
+    max-width: 450px;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; */
+}
+ul li{
+    display: flex;
+    list-style-type: none;
+    cursor: pointer;
+    margin-block-end: 12px;
+    border-radius: 8px;
+    padding: 6px 12px;
+    background-color: rgba(255, 252, 252, 0.54);
+    border: 0.125px solid rgb(177, 177, 177);
+    align-items: center;
+    justify-content: space-between;
+    transition: 1s ease-in-out;
+}
+ul li:hover{
+    background-color: #36e8ff;
+}
+ul li p{
+    flex-grow: 1;
+    padding: 2px;
+}
+.btn{
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background: none;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px;
+}
+.editBtn{
+    color: blue;
+}
+.deleteBtn{
+    color: red;
+}
